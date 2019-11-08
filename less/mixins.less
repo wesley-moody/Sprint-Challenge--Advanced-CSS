@@ -1,1 +1,19 @@
 // Mixins Here
+// Mixins in here
+.btnmixin(@bg-color:black,@font-clr:white,@size:200px){
+    display:block;
+    background-color: @bg-color;
+    width: @size;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: .8rem;
+    color: @font-clr;
+    text-align: center;
+    padding: auto 0;
+    margin: auto 0;    
+
+    &:hover {
+        color: @bg-color;
+        background-color: @font-clr;
+    }
+}
