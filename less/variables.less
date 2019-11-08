@@ -24,3 +24,13 @@
 @border-real: #dee2e6;
 
 // Mobile var
+@phone: ~'(max-width: 500px)';
+
+//Parametric mixin (display: flex)
+.flexmixin (@flexDir: row, @align: flex-start, @justify: flex-start, @wrap: nowrap){
+    display: flex;
+    flex-direction: @flexDir;
+    align-items: @align;
+    justify-content: @justify;
+    flex-wrap: @wrap;
+}
