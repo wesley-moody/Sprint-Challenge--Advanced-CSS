@@ -80,7 +80,7 @@
     width: 100%;
     margin-top: 1px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 5% auto;
     .center();
     flex-direction: column-reverse;    
   }
@@ -102,12 +102,20 @@
 
     .btn {
       .btnmixin ();
-      
+      .flexmixin ();
+      width: 80%;
+      // justify-content: center;
     }  
 
     .walk-img {
-      width: 100%;
+      .flexmixin();
+      flex-direction: row-reverse;
+      width: 20%;
       margin: 0;
+      @media @phone {
+        width: 100%
+        margin: auto;
+      }
     }
     
       img {

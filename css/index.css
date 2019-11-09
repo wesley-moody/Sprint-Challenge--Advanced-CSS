@@ -161,6 +161,8 @@ p {
   margin: 0 auto;
 }
 .nav-container {
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -172,9 +174,14 @@ p {
 }
 @media (max-width: 500px) {
   .nav-container {
-    width: 85%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     flex-direction: column;
-    flex-align: center;
   }
 }
 h1 {
@@ -183,12 +190,15 @@ h1 {
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: nowrap;
+  justify-content: center;
   align-items: space-around;
+  width: 100%;
 }
 .swtext {
   font-size: 4.5vh;
 }
 nav {
+  background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -199,15 +209,17 @@ nav {
   padding: 1.3vh;
 }
 .navigation {
+  margin: 0.5vh;
+  padding: 2vh;
   font-size: 2.4vh;
-  width: 25%;
 }
 @media (max-width: 500px) {
   .navigation {
-    width: 80%;
+    width: 100%;
   }
 }
-nav a {
+.navigation a {
+  padding: 1.5vh;
   color: #22283A;
   font-style: none;
 }
@@ -283,7 +295,7 @@ footer {
   width: 100%;
   margin-top: 1px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 5% auto;
   display: flex;
   justify-content: center;
   flex-direction: column-reverse;
@@ -305,19 +317,37 @@ p {
   width: 200px;
   height: 45px;
   font-size: 2rem;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   color: white;
   text-align: center;
   padding: auto 0;
   margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 80%;
 }
 .btn:hover {
   color: #22283A;
   background-color: white;
 }
 .walk-img {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  width: 20%;
   margin: 0;
+}
+@media (max-width: 500px) {
+  .walk-img {
+    width: 100%
+        margin: auto;
+  }
 }
 img {
   width: 100%;
